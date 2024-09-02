@@ -1,0 +1,20 @@
+---
+layout: base
+---
+
+<article>
+    <h2>{{ title }}</h2>
+    <ul class="post-metadata">
+        <li>
+            <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+        </li>
+        {%- assign taglist = tags | filterTagList %}
+        {%- for tag in taglist %}
+            <li>
+                <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a>
+                {%- if not loop.last %}, {% endif %}
+            </li>
+        {%- endfor %}
+    </ul>
+    {{ content }}
+</article>
