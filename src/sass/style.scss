@@ -1,5 +1,7 @@
-@use "vendors/normalize";
+@use "pkg:@divezone/divezone-web-styles" as dz;
 
-@use "base";
-@use "layout";
-@use "components";
+@include dz.theme(map-get(dz.$themes, red));
+
+@media (prefers-color-scheme: dark) {
+  @include dz.theme(map-get(dz.$themes, red));
+}

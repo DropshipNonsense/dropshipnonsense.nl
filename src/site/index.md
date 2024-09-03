@@ -1,6 +1,5 @@
 ---
 layout: home
-title: DevZone.one Eleventy Starter
 tags: main
 eleventyNavigation:
   key: Home

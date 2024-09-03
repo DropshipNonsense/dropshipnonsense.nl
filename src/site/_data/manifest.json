@@ -1,14 +1,16 @@
 {
-  "title": "DevZone.one Eleventy Starter",
-  "url": "https://starter-eleventy.devzoneone.app",
-  "language": "en",
+  "title": "Dropship Nonsense - De leugens achter dropshippers",
+  "url": "https://dropshipnonsense.nl",
+  "language": "nl",
   "meta": {
-    "author": "DevZone.one",
-    "description": "Starter template for Eleventy",
+    "author": "DropshipNonsense",
+    "description": "De leugens achter dropshippers",
     "keywords": [
-      "blog",
-      "devzone",
-      "devzone.one"
+      "dropship",
+      "dropshipping",
+      "nonsense",
+      "leugens",
+      "lies"
     ]
   }
 }

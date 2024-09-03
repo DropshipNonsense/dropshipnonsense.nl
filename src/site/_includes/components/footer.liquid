@@ -1,3 +1,15 @@
 <footer>
-    <div>© {% year %} DevZone.one</div>
+  <div class="footer--copyright">
+    © {% year %}
+    {{ author | default: manifest.meta.author }}
+    <div class="footer--trademarks">
+      Provided by <a href="https://dvz.one/company" target="_blank">The DiveZone Company</a> /
+      <a href="https://dvz.one/dev" target="_blank">DevZone Solutions</a>.
+    </div>
+  </div>
+
+  <div class="footer--fathom">
+    Proudly respecting your privacy with
+    <a href="https://dvz.one/fathom" target="_blank">Fathom Analytics</a>!
+  </div>
 </footer>
