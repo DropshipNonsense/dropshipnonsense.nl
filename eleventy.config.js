@@ -6,6 +6,8 @@ import {
 } from "@11ty/eleventy";
 import markdownIt from "markdown-it";
 import markdownItFootnote from "markdown-it-footnote";
+import markdownItMark from "markdown-it-mark";
+import { full as emoji } from 'markdown-it-emoji'
 
 import filters from "./src/filters.js";
 import helpers from "./src/helpers.js";
@@ -49,7 +51,7 @@ export default async function (eleventyConfig) {
   // library
   eleventyConfig.setLibrary(
     "md",
-    markdownIt(mdOptions).use(markdownItFootnote)
+    markdownIt(mdOptions).use(markdownItFootnote).use(markdownItMark).use(emoji)
   );
   // plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
